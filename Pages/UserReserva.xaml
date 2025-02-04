@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Burguer_Manager.Pages.UserReserva"
+             Title="Reservar Mesa"
+             BackgroundColor="#F5F5F5">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="15" Spacing="20" VerticalOptions="FillAndExpand">
+
+            <!-- Logo da Hamburgueria -->
+            <Image 
+                Source="burguer_logo_png.png"
+                HeightRequest="120"
+                Aspect="AspectFit"
+                HorizontalOptions="Center" />
+
+            <!-- Título -->
+            <Label 
+                Text="Reservar Mesa"
+                FontSize="28"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                TextColor="#344955" />
+
+            <!-- Formulário para Reservar Mesa -->
+            <Frame BorderColor="#344955" Padding="10" Margin="0" BackgroundColor="#FFFFFF" CornerRadius="10">
+                <VerticalStackLayout Spacing="10">
+
+                    <!-- Campo para o nome do cliente -->
+                    <Label Text="Nome do Cliente"
+                           FontSize="14"
+                           FontAttributes="Bold"
+                           TextColor="#344955"
+                           Margin="0,0,0,2" />
+                    <Entry 
+                        x:Name="ClienteEntry"
+                        Placeholder="Nome do Cliente"
+                        TextColor="#344955"
+                        PlaceholderColor="#B0B0B0"
+                        FontSize="16"
+                        BackgroundColor="Transparent"
+                        Margin="0,0,0,10" />
+
+                    <!-- Campo para escolher a data da reserva -->
+                    <Label Text="Data da Reserva"
+                           FontSize="14"
+                           FontAttributes="Bold"
+                           TextColor="#344955"
+                           Margin="0,0,0,2" />
+                    <DatePicker 
+                        x:Name="DataReservaPicker"
+                        Date="{Binding ReservaData}"
+                        FontSize="16"
+                        Margin="0,0,0,10" />
+
+                    <!-- Campo para escolher a hora da reserva -->
+                    <Label Text="Horário da Reserva"
+                           FontSize="14"
+                           FontAttributes="Bold"
+                           TextColor="#344955"
+                           Margin="0,0,0,2" />
+                    <TimePicker 
+                        x:Name="HorarioReservaPicker"
+                        Time="{Binding ReservaHora}"
+                        FontSize="16"
+                        Margin="0,0,0,10" />
+
+                    <!-- Campo para o número de pessoas -->
+                    <Label Text="Número de Pessoas"
+                           FontSize="14"
+                           FontAttributes="Bold"
+                           TextColor="#344955"
+                           Margin="0,0,0,2" />
+                    <Entry 
+                        x:Name="NumeroPessoasEntry"
+                        Placeholder="Número de Pessoas"
+                        TextColor="#344955"
+                        PlaceholderColor="#B0B0B0"
+                        FontSize="16"
+                        BackgroundColor="Transparent"
+                        Margin="0,0,0,10"
+                        Keyboard="Numeric" />
+
+                    <!-- Botão para salvar a reserva -->
+                    <Button 
+                        Text="Adicionar Reserva"
+                        BackgroundColor="#F9AA33"
+                        TextColor="#FFFFFF"
+                        FontAttributes="Bold"
+                        CornerRadius="10"
+                        HeightRequest="45"
+                        HorizontalOptions="Fill"
+                        Clicked="OnSalvarReservaClicked" />
+
+                </VerticalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

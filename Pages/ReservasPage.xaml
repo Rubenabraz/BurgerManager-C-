@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Burguer_Manager.Pages.ReservasPage"
+             Title="Reservas"
+             BackgroundColor="#F5F5F5">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20" VerticalOptions="FillAndExpand">
+
+            <!-- Título -->
+            <VerticalStackLayout HorizontalOptions="Center">
+                <Label 
+                    Text="Consultas de Reservas"
+                    FontSize="28"
+                    FontAttributes="Bold"
+                    TextColor="#344955" />
+            </VerticalStackLayout>
+
+            <!-- Lista de Reservas -->
+            <CollectionView ItemsSource="{Binding Reservas}" 
+                            SelectionMode="None"
+                            >
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame BorderColor="#344955" 
+                               Padding="15" 
+                               Margin="10,5" 
+                               BackgroundColor="#FFFFFF" 
+                               CornerRadius="15">
+                            <VerticalStackLayout Spacing="10">
+
+                                <!-- Nome do Cliente -->
+                                <Label Text="{Binding Cliente}" 
+                                       FontAttributes="Bold" 
+                                       FontSize="18" 
+                                       TextColor="#344955" />
+
+                                <!-- Data e Horário da Reserva -->
+                                <HorizontalStackLayout Spacing="5">
+                                    <Label Text="Data:" 
+                                           FontSize="14" 
+                                           FontAttributes="Bold" 
+                                           TextColor="#4A6572" />
+                                    <Label Text="{Binding DataReserva}" 
+                                           FontSize="14" 
+                                           TextColor="#4A6572" />
+
+                                    <Label Text="Horário:" 
+                                           FontSize="14" 
+                                           FontAttributes="Bold" 
+                                           TextColor="#4A6572" />
+                                    <Label Text="{Binding HorarioReserva}" 
+                                           FontSize="14" 
+                                           TextColor="#4A6572" />
+                                </HorizontalStackLayout>
+
+                                <!-- Status da Reserva -->
+                                <HorizontalStackLayout Spacing="5">
+                                    <Label Text="Numero Pessoas: " 
+                                          FontSize="14" 
+                                          FontAttributes="Bold" 
+                                          TextColor="#4A6572" />
+                                    <Label Text="{Binding NumeroPessoas}" 
+                                          FontSize="14" 
+                                          TextColor="#4A6572"/>
+                                </HorizontalStackLayout>
+
+                                <!-- Status da Reserva -->
+                                <HorizontalStackLayout Spacing="5">
+                                    <Label Text="Status:" 
+                                           FontSize="14" 
+                                           FontAttributes="Bold" 
+                                           TextColor="#4A6572" />
+                                    <Label Text="{Binding Status}" 
+                                           FontSize="14" 
+                                           TextColor="{Binding StatusColor}" />
+                                </HorizontalStackLayout>
+
+                                <!-- Picker para alterar o status -->
+                                <Picker SelectedItem="{Binding Status}"
+                                        Title="Alterar Status"
+                                        TextColor="#344955"
+                                        BackgroundColor="#EFEFEF">
+                                    <Picker.ItemsSource>
+                                        <x:Array Type="{x:Type x:String}">
+                                            <x:String>Pendente</x:String>
+                                            <x:String>Confirmada</x:String>
+                                            <x:String>Completa</x:String>
+                                        </x:Array>
+                                    </Picker.ItemsSource>
+                                </Picker>
+
+                                <!-- Botão de salvar alterações -->
+                                <Button Text="Salvar Alterações"
+                                        BackgroundColor="#F9AA33"
+                                        TextColor="#FFFFFF"
+                                        FontAttributes="Bold"
+                                        HeightRequest="40"
+                                        CornerRadius="15"
+                                        Clicked="OnSaveChangesClicked"
+                                        IsEnabled="{Binding IsStatusChanged}" />
+                            </VerticalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

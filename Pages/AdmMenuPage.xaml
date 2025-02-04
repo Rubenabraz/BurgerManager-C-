@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Burguer_Manager.Pages.AdmMenuPage"
+             Title="Admin Menu"
+             BackgroundColor="#F5F5F5">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="20" VerticalOptions="FillAndExpand">
+
+            <!-- Saudação -->
+            <Label 
+                Text="Olá, Administrador!"
+                FontSize="27"
+                FontAttributes="Bold"
+                TextColor="#344955"
+                HorizontalOptions="Center"
+                Margin="0,0,0,10" />
+
+            <!-- Logotipo -->
+            <Image 
+                Source="burguer_logo_png.png"
+                HeightRequest="150"
+                Aspect="AspectFit"
+                HorizontalOptions="Center" />
+
+            <!-- Título da Página -->
+            <Label 
+                Text="Administração"
+                FontSize="24"
+                FontAttributes="Bold"
+                HorizontalOptions="Center"
+                TextColor="#344955"
+                Margin="0,20,0,10"/>
+
+            <!-- Botões com estilo aprimorado -->
+            <Button 
+                Text="Reservas"
+                BackgroundColor="#155263"
+                TextColor="#ffd360"
+                HeightRequest="50"
+                FontAttributes="Bold"
+                CornerRadius="12"
+                Margin="0,10,0,10"
+                Clicked="OnReservasButtonClicked" />
+
+            <Button 
+                Text="Adicionar Reserva"
+                BackgroundColor="#155263"
+                TextColor="#ffd360"
+                HeightRequest="50"
+                FontAttributes="Bold"
+                CornerRadius="12"
+                Margin="0,10,0,10"
+                Clicked="OnAddReservasButtonClicked" />
+
+            <Button 
+                Text="Adicionar Funcionário"
+                BackgroundColor="#155263"
+                TextColor="#ffd360"
+                HeightRequest="50"
+                FontAttributes="Bold"
+                CornerRadius="12"
+                Margin="0,10,0,10"
+                Clicked="OnAddFuncButtonClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

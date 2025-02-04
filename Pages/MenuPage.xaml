@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Burguer_Manager.Pages.MenuPage"
+             Title="MenuPage"
+             BackgroundColor="White">
+
+    <VerticalStackLayout Padding="30" Spacing="20" VerticalOptions="Center">
+
+        <!-- Logotipo -->
+        <Image 
+            Source="burguer_logo_png.png"
+            HeightRequest="200"
+            Aspect="AspectFit"
+            HorizontalOptions="Center" />
+
+        <!-- Botão para Reservas -->
+        <Button 
+            Text="Reservas"
+            BackgroundColor="#FF6F61"
+            TextColor="White"
+            HeightRequest="50"
+            CornerRadius="10"
+            Clicked="OnReservasButtonClicked" />
+
+        <!-- Botão para Adicionar Reservas -->
+        <Button 
+            Text="Adicionar Reserva"
+            BackgroundColor="#FF6F61"
+            TextColor="White"
+            HeightRequest="50"
+            CornerRadius="10"
+            Clicked="OnAddReservasButtonClicked" />
+
+    </VerticalStackLayout>
+
+</ContentPage>

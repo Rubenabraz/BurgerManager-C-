@@ -1,0 +1,1 @@
+D:\PDM\Burguer Manager\Burguer Manager.csproj;x64

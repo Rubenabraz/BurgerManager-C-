@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Burguer_Manager.Pages.RegisterPage"
+             Title="RegisterPage"
+             BackgroundColor="#FFE5A9">
+
+    <VerticalStackLayout Padding="30" Spacing="25" VerticalOptions="Center">
+
+        <!-- Logotipo -->
+        <Image 
+    Source="burguer_logo_png.png"
+    HeightRequest="200"
+    Aspect="AspectFit"
+    HorizontalOptions="Center"
+   />
+        <!-- Título -->
+        <Label 
+           Text="Bem-vindo ao Burguer Manager!" 
+           FontSize="24" 
+           FontAttributes="Bold"
+           HorizontalOptions="Center" 
+           TextColor="#155263" />
+
+        <!-- Entrada de Email -->
+        <Frame Padding="0" BackgroundColor="#ffffff" CornerRadius="10" HasShadow="True">
+            <Entry 
+               x:Name="EmailEntry" 
+               Placeholder="Email" 
+               Keyboard="Email" 
+               PlaceholderColor="#9E9E9E" 
+               TextColor="#000000"
+               Margin="10,5" />
+        </Frame>
+
+        <!-- Entrada de Senha -->
+        <Frame Padding="0" BackgroundColor="#ffffff" CornerRadius="10" HasShadow="True">
+            <Entry 
+               x:Name="PasswordEntry" 
+               Placeholder="Senha" 
+               IsPassword="True" 
+               PlaceholderColor="#9E9E9E" 
+               TextColor="#000000"
+               Margin="10,5" />
+        </Frame>
+
+        <!-- Entrada de Confirmação de Senha -->
+        <Frame Padding="0" BackgroundColor="#ffffff" CornerRadius="10" HasShadow="True">
+            <Entry 
+               x:Name="ConfirmPasswordEntry" 
+               Placeholder="Confirmar Senha" 
+               IsPassword="True" 
+               PlaceholderColor="#9E9E9E" 
+               TextColor="#000000"
+               Margin="10,5" />
+        </Frame>
+        
+        <!-- Botão de Registrar -->
+        <Button 
+            Text="Registrar" 
+            BackgroundColor="#155263" 
+            TextColor="#ffd360" 
+            FontAttributes="Bold"
+            CornerRadius="10"
+            HeightRequest="45"
+            HorizontalOptions="Fill"
+            Clicked="OnRegisterClicked" />
+
+        <Label 
+  Text="Já tem conta? Faça login!" 
+  FontSize="14" 
+  FontAttributes="Bold"
+  HorizontalOptions="Center" 
+  VerticalTextAlignment="Center"
+  TextColor="#155263" 
+  Margin="0,0,0,-10" />
+
+        <!-- Mensagem de Resultado -->
+        <Label 
+           x:Name="ResultLabel" 
+           Text="" 
+           FontSize="14" 
+           TextColor="Red" 
+           HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>

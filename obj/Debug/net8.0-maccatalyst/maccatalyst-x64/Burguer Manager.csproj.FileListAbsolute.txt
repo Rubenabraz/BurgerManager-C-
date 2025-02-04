@@ -1,0 +1,41 @@
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mauiimage.inputs
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mauifont.inputs
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mauisplash.inputs
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mauisplash.stamp
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\burguer_logo.png
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\burguer_logo_png.png
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appiconItunesArtwork.png
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon83.5x83.5@2x.png
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon76x76@2x.png
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon60x60@3x.png
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon60x60@2x.png
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon40x40@3x.png
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon40x40@2x.png
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon29x29@3x.png
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon29x29@2x.png
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@3x.png
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\appicon20x20@2x.png
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\Assets.xcassets\appicon.appiconset\Contents.json
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\dotnet_bot@3x.png
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\dotnet_bot@2x.png
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\r\dotnet_bot.png
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mauiimage.stamp
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mauiimage.outputs
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\f\MauiInfo.plist
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\mauifont.stamp
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Regular.ttf
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\resizetizer\f\OpenSans-Semibold.ttf
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\actool\_PartialAppManifest.items
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\actool\_BundleResourceWithLogicalName.items
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\actool\_ProcessedImageAssetsPath.items
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\coremlc\_PartialAppManifest.items
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\coremlc\_BundleResourceWithLogicalName.items
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\coremlc\_ProcessedCoreMLModelsPath.items
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\_ProcessedBundleResourcesPath.items
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\_ProcessedContentPath.items
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\Burguer Manager.csproj.AssemblyReference.cache
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\Burguer Manager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\Burguer Manager.AssemblyInfoInputs.cache
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\Burguer Manager.AssemblyInfo.cs
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\Burguer Manager.csproj.CoreCompileInputs.cache
+C:\Users\ruben\Desktop\BurgerManager\BurguerManager\obj\Debug\net8.0-maccatalyst\maccatalyst-x64\Burguer Manager.sourcelink.json

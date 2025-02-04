@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Burguer_Manager.Pages.UserReservas"
+             Title="Minhas Reservas"
+             BackgroundColor="#FAFAFA">
+
+
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <!-- Título -->
+        <Label 
+            Text="Minhas Reservas"
+            FontSize="26"
+            FontAttributes="Bold"
+            HorizontalOptions="Center"
+            TextColor="#2B2D42" />
+
+        <!-- Lista de reservas -->
+        <CollectionView x:Name="ReservasCollectionView"
+                        BackgroundColor="Transparent"
+                        SelectionMode="None">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame BorderColor="#2B2D42" 
+                           BackgroundColor="#FFFFFF"
+                           Padding="20" 
+                           CornerRadius="12" 
+                           Margin="0,10,0,0"
+                           HasShadow="True">
+                        <VerticalStackLayout Spacing="8">
+                            <Label Text="{Binding NomeCliente}" 
+                                   FontSize="18" 
+                                   TextColor="#2B2D42" 
+                                   FontAttributes="Bold" />
+                            <Label Text="{Binding DataReserva}" 
+                                   FontSize="16" 
+                                   TextColor="#2B2D42" />
+                            <Label Text="{Binding HoraReserva}" 
+                                   FontSize="16" 
+                                   TextColor="#2B2D42" />
+                            <Label Text="{Binding NumeroPessoasTexto}" 
+                                   FontSize="16" 
+                                   TextColor="#2B2D42" />
+                        </VerticalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <!-- Mensagem de carregamento -->
+        <Grid VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" IsVisible="False" x:Name="LoadingLabel">
+            <ActivityIndicator IsRunning="True" Color="#2B2D42" />
+            <Label Text="Carregando reservas..."
+                   FontSize="16"
+                   TextColor="#2B2D42"
+                   Margin="0,10,0,0"
+                   HorizontalOptions="Center" />
+        </Grid>
+        <!-- Logotipo -->
+        <Image 
+     Source="burguer_logo_png.png"
+     HeightRequest="150"
+     Aspect="AspectFit"
+     HorizontalOptions="Center" />
+
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Burguer_Manager.Pages.UserMenuPage"
+             Title="Menu"
+             BackgroundColor="#F5F5F5">
+
+    <ScrollView Padding="20">
+        <VerticalStackLayout Spacing="25" VerticalOptions="FillAndExpand">
+
+            <!-- Logotipo -->
+            <Image 
+                Source="burguer_logo_png.png"
+                HeightRequest="150"
+                Aspect="AspectFit"
+                HorizontalOptions="Center" />
+
+            <!-- Título -->
+            <Label 
+                Text="Area de Cliente"
+                FontSize="28"
+                FontAttributes="Bold"
+                TextColor="#344955"
+                HorizontalOptions="Center"
+                Margin="0,20,0,20" />
+
+            <!-- Texto de Boas-Vindas -->
+            <Label 
+                Text="Bem-vindo, Cliente!"
+                FontSize="20"
+                FontAttributes="Italic"
+                TextColor="#344955"
+                HorizontalOptions="Center"
+                Margin="0,10,0,20" />
+
+            <!-- Botão para Reserva de Mesa -->
+            <Button 
+                Text="Reservar Mesa"
+                BackgroundColor="#155263"
+                TextColor="#ffd360"
+                HeightRequest="55"
+                FontAttributes="Bold"
+                CornerRadius="12"
+                Margin="0,10"
+                Padding="15,0"
+                Clicked="OnReservarButtonClicked">
+            </Button>
+
+            <!-- Botão para Visualizar Minhas Reservas -->
+            <Button 
+                Text="Minhas Reservas"
+                BackgroundColor="#155263"
+                TextColor="#ffd360"
+                HeightRequest="55"
+                FontAttributes="Bold"
+                CornerRadius="12"
+                Margin="0,10"
+                Padding="15,0"
+                Clicked="OnReservasButtonClicked">
+            </Button>
+
+            <!-- Botão de Logout -->
+            <Button 
+                Text="Logout"
+                BackgroundColor="#D9534F"
+                TextColor="#FFFFFF"
+                HeightRequest="55"
+                FontAttributes="Bold"
+                CornerRadius="12"
+                Margin="0,10,0,20"
+                Padding="15,0"
+                Clicked="OnLogoutButtonClicked">
+            </Button>
+
+        
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

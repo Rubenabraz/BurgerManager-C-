@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Burguer_Manager.HomePage"
+             BackgroundColor="#FFE5A9">
+
+    <VerticalStackLayout Padding="40" Spacing="30" VerticalOptions="Center">
+
+        <!-- Logotipo -->
+        <Image 
+            Source="burguer_logo_png.png"
+            HeightRequest="200"
+            Aspect="AspectFit"
+            HorizontalOptions="Center"
+           />
+
+        <!-- Título -->
+        <Label 
+            Text="Bem-vindo ao Burguer Manager!"
+            FontSize="30"
+            HorizontalOptions="Center"
+            TextColor="#155263" />
+
+        <!-- Campo de E-mail -->
+        <Entry
+            x:Name="EmailEntry"
+            Placeholder="E-mail"
+            Keyboard="Email"
+            PlaceholderColor="#155263"
+            TextColor="#155263"
+            BackgroundColor="Transparent"
+            HeightRequest="50"
+            HorizontalOptions="FillAndExpand"/>
+
+        <!-- Campo de Senha -->
+        <Entry
+            x:Name="PasswordEntry"
+            Placeholder="Senha"
+            IsPassword="True"
+            PlaceholderColor="#155263"
+            TextColor="#155263"
+            BackgroundColor="Transparent"
+            HeightRequest="50"
+            HorizontalOptions="FillAndExpand"/>
+
+        <!-- Botão de Login -->
+        <Button 
+            Text="Entrar"
+            BackgroundColor="#155263"
+            TextColor="#ffd360"
+            HeightRequest="50"
+            FontAttributes="Bold"
+            CornerRadius="10"
+            Clicked="OnLoginButtonClicked" />
+
+        <!-- Botão de Registro -->
+        <Button 
+            Text="Registar"
+            BackgroundColor="#155263"
+            TextColor="#ffd360"
+            HeightRequest="50"
+            FontAttributes="Bold"
+            CornerRadius="10"
+            Clicked="OnRegisterButtonClicked" />
+
+    </VerticalStackLayout>
+</ContentPage>

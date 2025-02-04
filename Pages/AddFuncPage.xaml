@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Burguer_Manager.Pages.AddFuncPage"
+             Title="Adicionar Funcionário"
+             BackgroundColor="#F5F5F5">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="25" VerticalOptions="FillAndExpand">
+
+            <!-- Título -->
+            <VerticalStackLayout Spacing="5" HorizontalOptions="Center">
+                <Label 
+                    Text="Adicionar Funcionarios"
+                    FontSize="32"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    TextColor="#344955" />
+            </VerticalStackLayout>
+
+
+            <Image 
+             Source="burguer_logo_png.png"
+             HeightRequest="200"
+             Aspect="AspectFit"
+             HorizontalOptions="Center"
+             />
+
+            <!-- Formulário para adicionar funcionário -->
+            <Frame BorderColor="#344955" Padding="15" Margin="10" BackgroundColor="#FFFFFF" CornerRadius="15">
+                <VerticalStackLayout Spacing="15">
+
+                    <!-- Nome -->
+                    <Entry 
+                        x:Name="NomeEntry"
+                        Placeholder="Nome do Funcionário"
+                        FontSize="16"
+                        TextColor="#344955"
+                       
+                        Margin="0,10,0,0"/>
+
+
+                    <!-- E-mail -->
+                    <Entry 
+                        x:Name="EmailEntry"
+                        Placeholder="E-mail do Funcionário"
+                        Keyboard="Email"
+                        FontSize="16"
+                        TextColor="#344955"
+                        
+                        Margin="0,10,0,0"/>
+
+
+                    <!-- Senha -->
+                    <Entry 
+                        x:Name="PasswordEntry"
+                        Placeholder="Senha"
+                        IsPassword="True"
+                        FontSize="16"
+                        TextColor="#344955"
+                        
+                        Margin="0,10,0,0"/>
+
+
+                    <!-- Botão de adicionar -->
+                    <Button 
+                        Text="Adicionar Funcionário"
+                        BackgroundColor="#F9AA33"
+                        TextColor="#FFFFFF"
+                        FontAttributes="Bold"
+                        CornerRadius="15"
+                        HeightRequest="50"
+                        Margin="0,10,0,0"
+                        HorizontalOptions="Fill"
+                        Clicked="OnSalvarFuncionarioClicked" />
+                </VerticalStackLayout>
+            </Frame>
+            
+
+            <CollectionView ItemsSource="{Binding Funcionarios}" SelectionMode="None">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame BorderColor="#344955" Padding="15" Margin="10" BackgroundColor="#FFFFFF" CornerRadius="15">
+                            <VerticalStackLayout Spacing="10">
+
+                                <!-- Nome -->
+                                <Label Text="{Binding Nome}" 
+                                       FontAttributes="Bold" 
+                                       FontSize="18" 
+                                       TextColor="#344955" />
+
+                                <!-- E-mail -->
+                                <Label Text="{Binding Email}" 
+                                       FontSize="14" 
+                                       TextColor="#4A6572" />
+
+                                <!-- Ações -->
+                                <HorizontalStackLayout Spacing="15">
+                                    <!-- Botão Editar -->
+                                    <Button Text="Editar"
+                                            BackgroundColor="#F9AA33"
+                                            TextColor="#FFFFFF"
+                                            HeightRequest="40"
+                                            FontAttributes="Bold"
+                                            CornerRadius="15"
+                                            HorizontalOptions="Fill" />
+
+
+                                    <!-- Botão Excluir -->
+                                    <Button Text="Excluir"
+                                            BackgroundColor="#D9534F"
+                                            TextColor="#FFFFFF"
+                                            HeightRequest="40"
+                                            FontAttributes="Bold"
+                                            CornerRadius="15"
+                                            HorizontalOptions="Fill"
+                                             />
+                                                         
+                                </HorizontalStackLayout>
+                            </VerticalStackLayout>
+                      
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
